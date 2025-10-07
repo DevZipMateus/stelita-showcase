@@ -1,4 +1,8 @@
-const Catalog = () => {
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
+
+const Catalogo = () => {
   // Array com todas as imagens da galeria
   const products = [
     "/galeria/WhatsApp Image 2025-09-29 at 14.16.30.jpg",
@@ -64,45 +68,52 @@ const Catalog = () => {
   ];
 
   return (
-    <section id="catalogo" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">Catálogo</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Confira nossa seleção de calçados e bolsas multimarcas
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {products.map((image, index) => (
-            <div
-              key={index}
-              className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="aspect-square overflow-hidden bg-muted">
-                <img
-                  src={image}
-                  alt={`Produto ${index + 1}`}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-              </div>
-              <div className="p-4">
-                <a
-                  href="https://wa.me/5564992436841"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full text-center bg-primary text-primary-foreground py-2 px-4 rounded-md hover:bg-primary/90 transition-colors text-sm"
-                >
-                  Para mais informação sobre tamanhos e cores clique aqui
-                </a>
-              </div>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main className="pt-24">
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h1 className="text-4xl font-bold mb-4 text-foreground">Catálogo</h1>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Confira nossa seleção de calçados e bolsas multimarcas
+              </p>
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+              {products.map((image, index) => (
+                <div
+                  key={index}
+                  className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+                >
+                  <div className="aspect-square overflow-hidden bg-muted">
+                    <img
+                      src={image}
+                      alt={`Produto ${index + 1}`}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <a
+                      href="https://wa.me/5564992436841"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full text-center bg-primary text-primary-foreground py-2 px-4 rounded-md hover:bg-primary/90 transition-colors text-sm"
+                    >
+                      Para mais informação sobre tamanhos e cores clique aqui
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+      <WhatsAppButton />
+    </div>
   );
 };
 
-export default Catalog;
+export default Catalogo;

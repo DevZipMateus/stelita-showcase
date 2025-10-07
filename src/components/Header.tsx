@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,26 +18,53 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          const headerOffset = 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-      setIsMobileMenuOpen(false);
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
     }
+    setIsMobileMenuOpen(false);
   };
 
   const navItems = [
     { label: "Início", id: "hero" },
     { label: "Sobre", id: "about" },
     { label: "Serviços", id: "services" },
+    { label: "Catálogo", path: "/catalogo" },
     { label: "Contato", id: "contact" },
   ];
+
+  const handleNavClick = (item: typeof navItems[0]) => {
+    if ("path" in item && item.path) {
+      navigate(item.path);
+      setIsMobileMenuOpen(false);
+    } else if ("id" in item && item.id) {
+      scrollToSection(item.id);
+    }
+  };
 
   return (
     <header
@@ -54,10 +84,10 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
+            {navItems.map((item, index) => (
               <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                key={item.label + index}
+                onClick={() => handleNavClick(item)}
                 className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
               >
                 {item.label}
@@ -87,10 +117,10 @@ const Header = () => {
         {isMobileMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
-              {navItems.map((item) => (
+              {navItems.map((item, index) => (
                 <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
+                  key={item.label + index}
+                  onClick={() => handleNavClick(item)}
                   className="text-foreground hover:text-primary transition-colors duration-300 font-medium text-left"
                 >
                   {item.label}

@@ -10,7 +10,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Logo and Description */}
           <div>
-            <img src={logo} alt="Stelita Logo" className="h-12 w-auto mb-4 brightness-0 invert" />
+            <img 
+              src={logo} 
+              alt="Stelita Logo" 
+              className="h-12 w-auto mb-4 invert brightness-0 contrast-200" 
+              style={{ filter: 'brightness(0) invert(1)' }}
+            />
             <p className="text-background/80 leading-relaxed">
               Calçados e bolsas multimarcas para mulheres que conquistam.
             </p>

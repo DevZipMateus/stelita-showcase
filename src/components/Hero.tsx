@@ -1,5 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
   return (
@@ -7,7 +6,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src={heroImage}
+          src="/galeria/WhatsApp Image 2025-09-29 at 14.16.41 (3).jpg"
           alt="Calçados e bolsas Stelita"
           className="w-full h-full object-cover"
         />

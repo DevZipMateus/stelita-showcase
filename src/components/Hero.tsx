@@ -15,7 +15,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-2xl mx-auto text-center backdrop-blur-sm bg-background/80 p-8 md:p-12 rounded-2xl shadow-xl">
+        <div className="max-w-2xl mx-auto text-center backdrop-blur-sm bg-background/50 p-8 md:p-12 rounded-2xl shadow-xl">
           <h1 className="mb-6 flex justify-center">
             <img 
               src={logo} 

@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   return (
@@ -16,8 +17,12 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl">
-          <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6 text-foreground">
-            Stelita
+          <h1 className="mb-6">
+            <img 
+              src={logo} 
+              alt="Stelita - Para mulheres que conquistam" 
+              className="h-32 md:h-40 w-auto"
+            />
           </h1>
           <h2 className="text-2xl md:text-3xl mb-8 text-muted-foreground font-light">
             Para mulheres que conquistam

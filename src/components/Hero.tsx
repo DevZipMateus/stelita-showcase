@@ -23,7 +23,7 @@ const Hero = () => {
               className="h-48 md:h-64 w-auto"
             />
           </h1>
-          <h2 className="text-2xl md:text-3xl mb-8 text-muted-foreground font-light">
+          <h2 className="text-2xl md:text-3xl mb-8 text-foreground font-light">
             Para mulheres que conquistam
           </h2>
           <p className="text-lg md:text-xl mb-10 text-foreground/80 leading-relaxed">

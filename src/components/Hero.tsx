@@ -15,8 +15,8 @@ const Hero = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-2xl">
-          <h1 className="mb-6">
+        <div className="max-w-2xl mx-auto text-center">
+          <h1 className="mb-6 flex justify-center">
             <img 
               src={logo} 
               alt="Stelita - Para mulheres que conquistam" 
@@ -29,7 +29,7 @@ const Hero = () => {
           <p className="text-lg md:text-xl mb-10 text-foreground/80 leading-relaxed">
             Varejo e atacado de calçados e bolsas multimarcas. Todas as marcas que trabalhamos são autênticas e originais.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://wa.me/5564992436841"
               target="_blank"

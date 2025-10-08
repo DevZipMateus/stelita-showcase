@@ -11,6 +11,7 @@ const Hero = () => {
           alt="Calçados e bolsas Stelita"
           className="w-full h-full object-cover object-top"
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-transparent" />
       </div>
 
       {/* Content */}

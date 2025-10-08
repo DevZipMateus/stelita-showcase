@@ -40,7 +40,7 @@ const Catalogo = () => {
     "/galeria/WhatsApp Image 2025-09-29 at 14.16.40 (2).jpg",
     "/galeria/WhatsApp Image 2025-09-29 at 14.16.40 (3).jpg",
     "/galeria/WhatsApp Image 2025-09-29 at 14.16.40.jpg",
-    
+    "/galeria/WhatsApp Image 2025-09-29 at 14.16.41 (1).jpg",
     "/galeria/WhatsApp Image 2025-09-29 at 14.16.41 (2).jpg",
     "/galeria/WhatsApp Image 2025-09-29 at 14.16.41 (3).jpg",
     "/galeria/WhatsApp Image 2025-09-29 at 14.16.41.jpg",

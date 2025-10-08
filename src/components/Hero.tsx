@@ -8,7 +8,7 @@ const Hero = () => {
         <img
           src="/galeria/WhatsApp Image 2025-09-29 at 14.16.41 (3).jpg"
           alt="Calçados e bolsas Stelita"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-transparent" />
       </div>

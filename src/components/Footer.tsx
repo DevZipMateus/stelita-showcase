@@ -13,7 +13,7 @@ const Footer = () => {
             <img 
               src={logo} 
               alt="Stelita Logo" 
-              className="h-24 w-auto mb-4 invert brightness-0 contrast-200" 
+              className="h-40 w-auto mb-4 invert brightness-0 contrast-200" 
               style={{ filter: 'brightness(0) invert(1)' }}
             />
             <p className="text-background/80 leading-relaxed">

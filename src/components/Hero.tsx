@@ -21,7 +21,7 @@ const Hero = () => {
           <img 
             src={logo} 
             alt="Stelita" 
-            className="h-48 md:h-64 w-auto mb-6"
+            className="h-48 md:h-64 w-auto mb-6 mix-blend-screen"
           />
           <h2 className="text-2xl md:text-3xl mb-8 text-muted-foreground font-light">
             Para mulheres que conquistam

@@ -27,7 +27,7 @@ const Hero = () => {
             Para mulheres que conquistam
           </h2>
           <p className="text-lg md:text-xl mb-10 text-foreground/80 leading-relaxed">
-            Stelita nasceu para vestir histórias reais de mulheres que batalham e vencem, não vestimos apenas estilo vestimos coragem, autoestima e a jornada de mulheres que transformam desafios em conquistas. Venha fazer parte deste movimento. Seja uma Seleta!
+            Stelita nasceu para vestir histórias reais de mulheres que batalham e vencem, não vestimos apenas estilo vestimos coragem, autoestima e a jornada de mulheres que transformam desafios em conquistas. Venha fazer parte deste movimento. Seja uma Seleta
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

@@ -70,7 +70,7 @@ const Catalogo = () => {
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45 (3).jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45.jpg", category: "tenis" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (1).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (2).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (2).jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (3).jpg", category: "salto" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46.jpg", category: "salto" },
   ];

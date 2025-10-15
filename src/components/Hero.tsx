@@ -32,10 +32,9 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/catalogo"
-              className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-full hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl font-medium text-lg group"
+              className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-full hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl font-medium text-lg"
             >
               Catálogo
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </a>
             <a
               href="https://forms.gle/pagEScXGjNMKFJW5A"

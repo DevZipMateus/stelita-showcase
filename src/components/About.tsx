@@ -27,7 +27,7 @@ const About = () => {
             Sobre a Stelita
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Atendemos on-line através do catalogo virtual, Instagram, WhatsApp e também presencialmente em Rio Verde-Go
+            Atendemos on-line através do catálogo virtual, Instagram, WhatsApp e também presencialmente em Rio Verde-GO
           </p>
         </div>
 

@@ -16,7 +16,7 @@ const Catalogo = () => {
   const products: Product[] = [
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.30.jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.31 (1).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.31(1).jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.31(1).jpg", category: "salto" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.31.jpg", category: "sapatilha" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.32 (1).jpg", category: "sapatilha" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.32.jpg", category: "sandalia" },

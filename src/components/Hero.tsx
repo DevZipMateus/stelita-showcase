@@ -31,12 +31,10 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/5564992436841"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/catalogo"
               className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-full hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl font-medium text-lg group"
             >
-              Comprar agora
+              Catálogo
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </a>
             <a

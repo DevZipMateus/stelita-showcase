@@ -7,9 +7,9 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/galeria/WhatsApp Image 2025-09-29 at 14.16.41 (3).jpg"
+          src="/galeria/WhatsApp Image 2025-09-29 at 14.16.30.jpg"
           alt="Calçados e bolsas Stelita"
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-center"
         />
       </div>
 

@@ -27,7 +27,7 @@ const About = () => {
             Sobre a Stelita
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Atendemos on-line através do catálogo virtual, Instagram, WhatsApp e também presencialmente em Rio Verde-GO. Nossa missão é oferecer produtos de qualidade para mulheres que buscam estilo e autenticidade.
+            Stelita nasceu para vestir histórias reais de mulheres que batalham e vencem, não vestimos apenas estilo vestimos coragem, autoestima e a jornada de mulheres que transformam desafios em conquistas. Venha fazer parte deste movimento. Seja uma Seleta!
           </p>
         </div>
 

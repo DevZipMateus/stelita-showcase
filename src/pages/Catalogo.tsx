@@ -58,7 +58,7 @@ const Catalogo = () => {
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42.jpg", category: "salto" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (1).jpg", category: "salto" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (2).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (3).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (3).jpg", category: "salto" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (4).jpg", category: "sapatilha" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43.jpg", category: "sapatilha" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.44 (1).jpg", category: "sapatilha" },

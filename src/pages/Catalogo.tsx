@@ -6,7 +6,7 @@ import { useState } from "react";
 
 type Product = {
   image: string;
-  category: "tenis" | "sandalia" | "sapatilha" | "bolsa";
+  category: "tenis" | "sandalia" | "sapatilha" | "salto";
 };
 
 const Catalogo = () => {
@@ -34,20 +34,20 @@ const Catalogo = () => {
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.35.jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.36 (1).jpg", category: "sapatilha" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.36.jpg", category: "sapatilha" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.37 (1).jpg", category: "bolsa" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.37 (2).jpg", category: "bolsa" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.37.jpg", category: "bolsa" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.38 (1).jpg", category: "bolsa" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.38 (2).jpg", category: "bolsa" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.38 (3).jpg", category: "bolsa" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.37 (1).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.37 (2).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.37.jpg", category: "salto" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.38 (1).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.38 (2).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.38 (3).jpg", category: "salto" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.38.jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.39 (1).jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.39 (2).jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.39 (3).jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.39.jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.40 (1).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.40 (2).jpg", category: "bolsa" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.40 (3).jpg", category: "bolsa" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.40 (2).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.40 (3).jpg", category: "salto" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.40.jpg", category: "sapatilha" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.41 (1).jpg", category: "sapatilha" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.41 (2).jpg", category: "sapatilha" },
@@ -55,7 +55,7 @@ const Catalogo = () => {
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42 (1).jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42 (2).jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42 (3).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42.jpg", category: "bolsa" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42.jpg", category: "salto" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (1).jpg", category: "tenis" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (2).jpg", category: "tenis" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (3).jpg", category: "tenis" },
@@ -71,8 +71,8 @@ const Catalogo = () => {
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45.jpg", category: "tenis" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (1).jpg", category: "tenis" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (2).jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (3).jpg", category: "bolsa" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46.jpg", category: "bolsa" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (3).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46.jpg", category: "salto" },
   ];
 
   const filteredProducts = activeCategory === "todos" 
@@ -84,7 +84,7 @@ const Catalogo = () => {
     tenis: "Tênis",
     sandalia: "Sandálias",
     sapatilha: "Sapatilhas",
-    bolsa: "Bolsas"
+    salto: "Saltos"
   };
 
   return (
@@ -106,7 +106,7 @@ const Catalogo = () => {
                 <TabsTrigger value="tenis">Tênis</TabsTrigger>
                 <TabsTrigger value="sandalia">Sandálias</TabsTrigger>
                 <TabsTrigger value="sapatilha">Sapatilhas</TabsTrigger>
-                <TabsTrigger value="bolsa">Bolsas</TabsTrigger>
+                <TabsTrigger value="salto">Saltos</TabsTrigger>
               </TabsList>
 
               <TabsContent value={activeCategory} className="mt-8">

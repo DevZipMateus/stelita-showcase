@@ -10,7 +10,7 @@ type Product = {
 };
 
 const Catalogo = () => {
-  const [activeCategory, setActiveCategory] = useState<string>("todos");
+  const [activeCategory, setActiveCategory] = useState<string>("tenis");
 
   // Produtos categorizados
   const products: Product[] = [
@@ -75,12 +75,9 @@ const Catalogo = () => {
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46.jpg", category: "salto" },
   ];
 
-  const filteredProducts = activeCategory === "todos" 
-    ? products 
-    : products.filter(p => p.category === activeCategory);
+  const filteredProducts = products.filter(p => p.category === activeCategory);
 
   const categoryLabels = {
-    todos: "Todos",
     tenis: "Tênis",
     sandalia: "Sandálias",
     sapatilha: "Sapatilhas",
@@ -100,9 +97,8 @@ const Catalogo = () => {
               </p>
             </div>
 
-            <Tabs defaultValue="todos" className="w-full" onValueChange={setActiveCategory}>
-              <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-5 mb-12 bg-muted">
-                <TabsTrigger value="todos">Todos</TabsTrigger>
+            <Tabs defaultValue="tenis" className="w-full" onValueChange={setActiveCategory}>
+              <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-4 mb-12 bg-muted">
                 <TabsTrigger value="tenis">Tênis</TabsTrigger>
                 <TabsTrigger value="sandalia">Sandálias</TabsTrigger>
                 <TabsTrigger value="sapatilha">Sapatilhas</TabsTrigger>

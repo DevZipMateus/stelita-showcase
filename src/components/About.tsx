@@ -27,7 +27,7 @@ const About = () => {
             Sobre a Stelita
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Stelita nasceu para vestir histórias reais de mulheres que batalham e vencem, não vestimos apenas estilo vestimos coragem, autoestima e a jornada de mulheres que transformam desafios em conquistas. Venha fazer parte deste movimento. Seja uma Seleta!
+            Atendemos on-line através do catalogo virtual, Instagram, WhatsApp e também presencialmente em Rio Verde-Go
           </p>
         </div>
 

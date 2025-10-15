@@ -54,8 +54,8 @@ const Footer = () => {
             <ul className="space-y-2 text-background/80">
               <li>Rio Verde-GO</li>
               <li>
-                <a href="tel:+5564992112384" className="hover:text-background transition-colors">
-                  (64) 99211-2384
+                <a href="tel:+5564992436841" className="hover:text-background transition-colors">
+                  (64) 99243-6841
                 </a>
               </li>
               <li>

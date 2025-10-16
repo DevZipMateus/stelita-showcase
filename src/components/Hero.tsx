@@ -9,7 +9,7 @@ const Hero = () => {
         <img
           src="/galeria/hero-background.jpg"
           alt="Mulher com sacolas Stelita"
-          className="w-full h-full object-cover object-[center_20%] md:object-center"
+          className="w-full h-full object-cover object-top"
         />
       </div>
 

@@ -27,7 +27,13 @@ const About = () => {
             Sobre a Stelita
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Atendemos on-line através do catálogo virtual, Instagram, WhatsApp e também presencialmente em Rio Verde-GO
+            Localizada em Rio Verde – GO, contamos com uma loja física e também realizamos vendas pelo atendimento digital, enviando para todo o Brasil com rapidez e segurança.
+          </p>
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mt-6">
+            Oferecemos facilidade na hora da compra: parcelamos em até 6x sem juros no cartão e garantimos um atendimento humanizado, ágil e feito com cuidado em cada detalhe. Trabalhamos com marcas reconhecidas no mercado e produtos selecionados para proporcionar estilo, conforto e versatilidade ao dia a dia das nossas clientes.
+          </p>
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mt-6">
+            Comprar na Stelita é ter confiança, praticidade e uma experiência que vai muito além do produto.
           </p>
         </div>
 

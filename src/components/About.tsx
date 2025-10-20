@@ -15,7 +15,7 @@ const About = () => {
     {
       icon: Users,
       title: "Atendimento personalizado",
-      description: "Atendimento on-line e presencial em Rio Verde-GO para sua comodidade.",
+      description: "Atendimento on-line e presencial em Rio Verde-GO para sua comodidade, com entrega disponível para todo o Brasil.",
     },
   ];
 

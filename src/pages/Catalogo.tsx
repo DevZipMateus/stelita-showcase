@@ -73,6 +73,14 @@ const Catalogo = () => {
     { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.46%20(2).jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.46%20(3).jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.46.jpg", category: "sandalia" },
+    { image: "/galeria/bota-1.jpg", category: "botas" },
+    { image: "/galeria/bota-2.jpg", category: "botas" },
+    { image: "/galeria/bota-3.jpg", category: "botas" },
+    { image: "/galeria/bota-4.jpg", category: "botas" },
+    { image: "/galeria/bota-5.jpg", category: "botas" },
+    { image: "/galeria/bota-6.jpg", category: "botas" },
+    { image: "/galeria/bota-7.jpg", category: "botas" },
+    { image: "/galeria/bota-8.jpg", category: "botas" },
   ];
 
   const filteredProducts = products.filter(p => p.category === activeCategory);

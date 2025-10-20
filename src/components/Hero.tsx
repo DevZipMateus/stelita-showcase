@@ -7,8 +7,8 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/galeria/WhatsApp Image 2025-09-29 at 14.16.41 (3).jpg"
-          alt="Calçados e bolsas Stelita"
+          src="/galeria/hero-background.jpg"
+          alt="Mulher com sacolas Stelita"
           className="w-full h-full object-cover object-top"
         />
       </div>
@@ -27,22 +27,14 @@ const Hero = () => {
             Para mulheres que conquistam
           </h2>
           <p className="text-lg md:text-xl mb-10 text-foreground/80 leading-relaxed">
-            Stelita nasceu para vestir histórias reais de mulheres que batalham e vencem, não vestimos apenas estilo vestimos coragem, autoestima e a jornada de mulheres que transformam desafios em conquistas. Venha fazer parte deste movimento. Seja uma Seleta
+            Stelita nasceu para vestir histórias reais de mulheres que batalham e vencem, não vestimos apenas estilo vestimos coragem, autoestima e a jornada de mulheres que transformam desafios em conquistas. Venha fazer parte deste movimento. Seja uma Seleta!
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <a
               href="/catalogo"
               className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-full hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl font-medium text-lg"
             >
-              Catálogo
-            </a>
-            <a
-              href="https://forms.gle/pagEScXGjNMKFJW5A"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-accent/20 text-accent-foreground px-8 py-4 rounded-full border-2 border-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300 font-medium text-lg"
-            >
-              Cadastro atacado
+              Veja nosso catálogo
             </a>
           </div>
         </div>

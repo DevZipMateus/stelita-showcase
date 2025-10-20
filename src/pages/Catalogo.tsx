@@ -6,7 +6,7 @@ import { useState } from "react";
 
 type Product = {
   image: string;
-  category: "tenis" | "sandalia" | "sapatilha" | "salto";
+  category: "tenis" | "sandalia" | "sapatilha" | "salto" | "botas";
 };
 
 const Catalogo = () => {
@@ -14,74 +14,85 @@ const Catalogo = () => {
 
   // Produtos categorizados
   const products: Product[] = [
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.30.jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.31 (1).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.31(1).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.31.jpg", category: "sapatilha" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.32 (1).jpg", category: "sapatilha" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.32.jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.33 (1).jpg", category: "sapatilha" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.33 (2).jpg", category: "sapatilha" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.33.jpg", category: "sapatilha" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.34 (1).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.34 (2).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.34 (3).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.34 (4).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.34.jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.35 (1).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.35 (2).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.35 (3).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.35.jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.36 (1).jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.36.jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.37 (1).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.37 (2).jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.37.jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.38 (1).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.38 (2).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.38 (3).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.38.jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.39 (1).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.39 (2).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.39 (3).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.39.jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.40 (1).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.40 (2).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.40 (3).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.40.jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.41 (1).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.41 (2).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.41.jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42 (1).jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42 (2).jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42 (3).jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42.jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (1).jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (2).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (3).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (4).jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43.jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.44 (1).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.44 (2).jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.44 (3).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.44.jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45 (1).jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45 (2).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45 (3).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45.jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (1).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (2).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (3).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46.jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.30.jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.31%20(1).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.31(1).jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.31.jpg", category: "sapatilha" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.32%20(1).jpg", category: "sapatilha" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.32.jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.33%20(1).jpg", category: "sapatilha" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.33%20(2).jpg", category: "sapatilha" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.33.jpg", category: "sapatilha" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.34%20(1).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.34%20(2).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.34%20(3).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.34%20(4).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.34.jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.35%20(1).jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.35%20(2).jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.35%20(3).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.35.jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.36%20(1).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.36.jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.37%20(1).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.37%20(2).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.37.jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.38%20(1).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.38%20(2).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.38%20(3).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.38.jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.39%20(1).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.39%20(2).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.39%20(3).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.39.jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.40%20(1).jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.40%20(2).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.40%20(3).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.40.jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.41%20(1).jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.41%20(2).jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.41.jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.42%20(1).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.42%20(2).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.42%20(3).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.42.jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.43%20(1).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.43%20(2).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.43%20(3).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.43%20(4).jpg", category: "botas" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.43.jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.44%20(1).jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.44%20(2).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.44%20(3).jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.44.jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.45%20(1).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.45%20(2).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.45%20(3).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.45.jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.46%20(1).jpg", category: "salto" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.46%20(2).jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.46%20(3).jpg", category: "sandalia" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.46.jpg", category: "sandalia" },
+    { image: "/galeria/bota-1.jpg", category: "botas" },
+    { image: "/galeria/bota-2.jpg", category: "botas" },
+    { image: "/galeria/bota-3.jpg", category: "botas" },
+    { image: "/galeria/bota-4.jpg", category: "botas" },
+    { image: "/galeria/bota-5.jpg", category: "botas" },
+    { image: "/galeria/bota-6.jpg", category: "botas" },
+    { image: "/galeria/bota-7.jpg", category: "botas" },
+    { image: "/galeria/bota-8.jpg", category: "botas" },
+    { image: "/galeria/sapatilha-1.jpg", category: "sapatilha" },
+    { image: "/galeria/sapatilha-2.jpg", category: "sapatilha" },
   ];
 
   const filteredProducts = products.filter(p => p.category === activeCategory);
 
   const categoryLabels = {
     tenis: "Tênis",
-    sandalia: "Sandálias",
+    sandalia: "Flats",
     sapatilha: "Sapatilhas",
-    salto: "Saltos"
+    salto: "Saltos",
+    botas: "Botas"
   };
 
   return (
@@ -98,11 +109,12 @@ const Catalogo = () => {
             </div>
 
             <Tabs defaultValue="tenis" className="w-full" onValueChange={setActiveCategory}>
-              <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-4 mb-12 bg-muted">
+              <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-5 mb-12 bg-muted">
                 <TabsTrigger value="tenis">Tênis</TabsTrigger>
-                <TabsTrigger value="sandalia">Sandálias</TabsTrigger>
+                <TabsTrigger value="sandalia">Flats</TabsTrigger>
                 <TabsTrigger value="sapatilha">Sapatilhas</TabsTrigger>
                 <TabsTrigger value="salto">Saltos</TabsTrigger>
+                <TabsTrigger value="botas">Botas</TabsTrigger>
               </TabsList>
 
               <TabsContent value={activeCategory} className="mt-8">

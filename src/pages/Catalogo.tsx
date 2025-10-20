@@ -86,6 +86,11 @@ const Catalogo = () => {
   ];
 
   const filteredProducts = products.filter(p => p.category === activeCategory);
+  
+  console.log('Active Category:', activeCategory);
+  console.log('Total Products:', products.length);
+  console.log('Filtered Products:', filteredProducts.length);
+  console.log('Filtered Products:', filteredProducts);
 
   const categoryLabels: Record<string, string> = {
     tenis: "Tênis",

@@ -81,6 +81,8 @@ const Catalogo = () => {
     { image: "/galeria/bota-6.jpg", category: "botas" },
     { image: "/galeria/bota-7.jpg", category: "botas" },
     { image: "/galeria/bota-8.jpg", category: "botas" },
+    { image: "/galeria/sapatilha-1.jpg", category: "sapatilha" },
+    { image: "/galeria/sapatilha-2.jpg", category: "sapatilha" },
   ];
 
   const filteredProducts = products.filter(p => p.category === activeCategory);

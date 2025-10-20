@@ -87,7 +87,7 @@ const Catalogo = () => {
 
   const filteredProducts = products.filter(p => p.category === activeCategory);
 
-  const categoryLabels = {
+  const categoryLabels: Record<string, string> = {
     tenis: "Tênis",
     sandalia: "Flats",
     sapatilha: "Sapatilhas",

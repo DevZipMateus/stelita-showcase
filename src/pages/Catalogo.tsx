@@ -79,7 +79,7 @@ const Catalogo = () => {
 
   const categoryLabels = {
     tenis: "Tênis",
-    sandalia: "Sandálias",
+    sandalia: "Flats",
     sapatilha: "Sapatilhas",
     salto: "Saltos",
     botas: "Botas"
@@ -101,7 +101,7 @@ const Catalogo = () => {
             <Tabs defaultValue="tenis" className="w-full" onValueChange={setActiveCategory}>
               <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-5 mb-12 bg-muted">
                 <TabsTrigger value="tenis">Tênis</TabsTrigger>
-                <TabsTrigger value="sandalia">Sandálias</TabsTrigger>
+                <TabsTrigger value="sandalia">Flats</TabsTrigger>
                 <TabsTrigger value="sapatilha">Sapatilhas</TabsTrigger>
                 <TabsTrigger value="salto">Saltos</TabsTrigger>
                 <TabsTrigger value="botas">Botas</TabsTrigger>

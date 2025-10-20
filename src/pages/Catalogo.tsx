@@ -6,7 +6,7 @@ import { useState } from "react";
 
 type Product = {
   image: string;
-  category: "tenis" | "sandalia" | "sapatilha" | "salto";
+  category: "tenis" | "sandalia" | "sapatilha" | "salto" | "botas";
 };
 
 const Catalogo = () => {
@@ -59,7 +59,7 @@ const Catalogo = () => {
     { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.43%20(1).jpg", category: "tenis" },
     { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.43%20(2).jpg", category: "salto" },
     { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.43%20(3).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.43%20(4).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.43%20(4).jpg", category: "botas" },
     { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.43.jpg", category: "tenis" },
     { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.44%20(1).jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp%20Image%202025-09-29%20at%2014.16.44%20(2).jpg", category: "tenis" },
@@ -81,7 +81,8 @@ const Catalogo = () => {
     tenis: "Tênis",
     sandalia: "Sandálias",
     sapatilha: "Sapatilhas",
-    salto: "Saltos"
+    salto: "Saltos",
+    botas: "Botas"
   };
 
   return (
@@ -98,11 +99,12 @@ const Catalogo = () => {
             </div>
 
             <Tabs defaultValue="tenis" className="w-full" onValueChange={setActiveCategory}>
-              <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-4 mb-12 bg-muted">
+              <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-5 mb-12 bg-muted">
                 <TabsTrigger value="tenis">Tênis</TabsTrigger>
                 <TabsTrigger value="sandalia">Sandálias</TabsTrigger>
                 <TabsTrigger value="sapatilha">Sapatilhas</TabsTrigger>
                 <TabsTrigger value="salto">Saltos</TabsTrigger>
+                <TabsTrigger value="botas">Botas</TabsTrigger>
               </TabsList>
 
               <TabsContent value={activeCategory} className="mt-8">

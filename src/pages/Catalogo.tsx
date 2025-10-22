@@ -6,7 +6,7 @@ import { useState } from "react";
 
 type Product = {
   image: string;
-  category: "tenis" | "sandalia" | "sapatilha" | "salto" | "botas";
+  category: "tenis" | "sandalia" | "sapatilha" | "salto" | "botas" | "masculino";
 };
 
 const Catalogo = () => {
@@ -55,19 +55,19 @@ const Catalogo = () => {
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42 (2).jpg", category: "tenis" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42 (3).jpg", category: "tenis" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42.jpg", category: "tenis" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (1).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (1).jpg", category: "masculino" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (2).jpg", category: "salto" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (3).jpg", category: "salto" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43 (4).jpg", category: "botas" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43.jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.43.jpg", category: "masculino" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.44 (1).jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.44 (2).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.44 (2).jpg", category: "masculino" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.44 (3).jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.44.jpg", category: "sandalia" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45 (1).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45 (1).jpg", category: "masculino" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45 (2).jpg", category: "salto" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45 (3).jpg", category: "salto" },
-    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45.jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45.jpg", category: "masculino" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (1).jpg", category: "salto" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (2).jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.46 (3).jpg", category: "sandalia" },
@@ -99,7 +99,8 @@ const Catalogo = () => {
     sandalia: "Flats",
     sapatilha: "Sapatilhas",
     salto: "Saltos",
-    botas: "Botas"
+    botas: "Botas",
+    masculino: "Masculino"
   };
 
   return (
@@ -116,12 +117,13 @@ const Catalogo = () => {
             </div>
 
             <Tabs defaultValue="tenis" className="w-full" onValueChange={setActiveCategory}>
-              <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-5 mb-12 bg-muted">
+              <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-6 mb-12 bg-muted">
                 <TabsTrigger value="tenis">Tênis</TabsTrigger>
                 <TabsTrigger value="sandalia">Flats</TabsTrigger>
                 <TabsTrigger value="sapatilha">Sapatilhas</TabsTrigger>
                 <TabsTrigger value="salto">Saltos</TabsTrigger>
                 <TabsTrigger value="botas">Botas</TabsTrigger>
+                <TabsTrigger value="masculino">Masculino</TabsTrigger>
               </TabsList>
 
               <TabsContent value={activeCategory} className="mt-8">

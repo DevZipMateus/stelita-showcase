@@ -82,6 +82,14 @@ const Catalogo = () => {
     { image: "/galeria/bota-8.jpg", category: "botas" },
     { image: "/galeria/sapatilha-1.jpg", category: "sapatilha" },
     { image: "/galeria/sapatilha-2.jpg", category: "sapatilha" },
+    { image: "/galeria/sapatilha-9.jpg", category: "sapatilha" },
+    { image: "/galeria/sapatilha-10.jpg", category: "sapatilha" },
+    { image: "/galeria/sapatilha-11.jpg", category: "sapatilha" },
+    { image: "/galeria/sapatilha-12.jpg", category: "sapatilha" },
+    { image: "/galeria/sapatilha-13.jpg", category: "sapatilha" },
+    { image: "/galeria/sapatilha-14.jpg", category: "sapatilha" },
+    { image: "/galeria/sapatilha-15.jpg", category: "sapatilha" },
+    { image: "/galeria/sapatilha-16.jpg", category: "sapatilha" },
   ];
 
   const filteredProducts = products.filter(p => p.category === activeCategory);

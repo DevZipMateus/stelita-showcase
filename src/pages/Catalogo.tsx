@@ -107,6 +107,9 @@ const Catalogo = () => {
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.44 (2).jpg", category: "masculino" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45 (1).jpg", category: "masculino" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.45.jpg", category: "masculino" },
+    { image: "/galeria/masculino-1.jpg", category: "masculino" },
+    { image: "/galeria/masculino-2.jpg", category: "masculino" },
+    { image: "/galeria/masculino-3.jpg", category: "masculino" },
   ];
 
   const filteredProducts = products.filter(p => p.category === activeCategory);

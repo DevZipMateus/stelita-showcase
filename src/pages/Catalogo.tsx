@@ -12,7 +12,6 @@ type Product = {
 const Catalogo = () => {
   const [activeCategory, setActiveCategory] = useState<string>("tenis");
 
-  // Produtos categorizados
   const products: Product[] = [
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.30.jpg", category: "sandalia" },
     { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.31 (1).jpg", category: "salto" },

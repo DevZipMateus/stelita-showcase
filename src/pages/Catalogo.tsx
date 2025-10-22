@@ -14,6 +14,12 @@ const Catalogo = () => {
 
   const products: Product[] = [
     // Tênis
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.36 (1).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.37 (2).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42 (1).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42 (2).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42 (3).jpg", category: "tenis" },
+    { image: "/galeria/WhatsApp Image 2025-09-29 at 14.16.42.jpg", category: "tenis" },
     { image: "/galeria/tenis-1.jpg", category: "tenis" },
     { image: "/galeria/tenis-2.jpg", category: "tenis" },
     { image: "/galeria/tenis-3.jpg", category: "tenis" },

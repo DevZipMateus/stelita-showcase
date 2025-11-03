@@ -18,7 +18,7 @@ const Vitrine = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen overflow-hidden flex flex-col">
+    <div className="w-full min-h-screen flex flex-col">
       <Header />
       <div className="pt-20 w-full flex-1">
         <iframe
@@ -31,8 +31,6 @@ const Vitrine = () => {
           title="Demonstração de Vitrine"
         />
       </div>
-      <div id="montesite-footer-badge" className="h-[63px]"></div>
-      <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
     </div>
   );
 };

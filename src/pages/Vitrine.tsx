@@ -18,9 +18,9 @@ const Vitrine = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen overflow-hidden">
+    <div className="w-full h-screen overflow-hidden flex flex-col">
       <Header />
-      <div className="pt-20 w-full">
+      <div className="pt-20 w-full flex-1">
         <iframe
           src="https://fransandalias.egestor.com.br/vitrine/"
           style={{
@@ -31,6 +31,8 @@ const Vitrine = () => {
           title="Demonstração de Vitrine"
         />
       </div>
+      <div id="montesite-footer-badge" className="h-[63px]"></div>
+      <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
     </div>
   );
 };

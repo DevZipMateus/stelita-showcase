@@ -18,9 +18,9 @@ const Vitrine = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen flex flex-col">
+    <div className="w-full h-screen overflow-hidden flex flex-col">
       <Header />
-      <div className="pt-20 w-full flex-1">
+      <div className="pt-20 w-full flex-1 overflow-hidden">
         <iframe
           src="https://fransandalias.egestor.com.br/vitrine/"
           style={{

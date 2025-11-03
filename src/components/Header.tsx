@@ -53,9 +53,6 @@ const Header = () => {
     label: "Serviços",
     id: "services"
   }, {
-    label: "Catálogo",
-    path: "/catalogo"
-  }, {
     label: "Contato",
     id: "contact"
   }];

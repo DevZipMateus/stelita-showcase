@@ -17,6 +17,16 @@ const Vitrine = () => {
     calculateHeight();
     window.addEventListener("resize", calculateHeight);
 
+    // Carrega o script do badge do MonteSite
+    const script = document.createElement('script');
+    script.src = 'https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe';
+    script.async = true;
+    
+    const badgeContainer = document.getElementById('montesite-vitrine-badge');
+    if (badgeContainer) {
+      badgeContainer.appendChild(script);
+    }
+
     return () => {
       document.body.style.overflow = "auto";
       window.removeEventListener("resize", calculateHeight);
@@ -26,7 +36,7 @@ const Vitrine = () => {
   return (
     <div className="w-full h-screen overflow-hidden flex flex-col">
       <Header />
-      <div className="pt-20 w-full flex-1 overflow-hidden">
+      <div className="w-full flex-1 overflow-hidden" style={{ marginTop: '80px' }}>
         <iframe
           src="https://fransandalias.egestor.com.br/vitrine/"
           style={{
@@ -36,6 +46,9 @@ const Vitrine = () => {
           }}
           title="Demonstração de Vitrine"
         />
+      </div>
+      <div className="w-full h-[63px] flex-shrink-0">
+        <div id="montesite-vitrine-badge"></div>
       </div>
     </div>
   );

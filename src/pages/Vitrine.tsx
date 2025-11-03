@@ -5,6 +5,9 @@ const Vitrine = () => {
   const [iframeHeight, setIframeHeight] = useState(0);
 
   useEffect(() => {
+    // Trava a rolagem do body
+    document.body.style.overflow = "hidden";
+    
     const calculateHeight = () => {
       // Altura total da viewport - Header (80px) - Badge inferior (63px)
       const height = window.innerHeight - 80 - 63;
@@ -14,7 +17,10 @@ const Vitrine = () => {
     calculateHeight();
     window.addEventListener("resize", calculateHeight);
 
-    return () => window.removeEventListener("resize", calculateHeight);
+    return () => {
+      document.body.style.overflow = "auto";
+      window.removeEventListener("resize", calculateHeight);
+    };
   }, []);
 
   return (

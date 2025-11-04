@@ -34,7 +34,7 @@ const Hero = () => {
               href="/vitrine"
               className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-full hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl font-medium text-lg"
             >
-              Veja nosso catálogo
+              Veja nossa vitrine
             </a>
           </div>
         </div>

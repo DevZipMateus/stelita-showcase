@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const Hero = () => {
@@ -30,12 +31,12 @@ const Hero = () => {
             Stelita nasceu para vestir histórias reais de mulheres que batalham e vencem, não vestimos apenas estilo vestimos coragem, autoestima e a jornada de mulheres que transformam desafios em conquistas. Venha fazer parte deste movimento. Seja uma Seleta!
           </p>
           <div className="flex justify-center">
-            <a
-              href="/vitrine"
+            <Link
+              to="/vitrine"
               className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-full hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl font-medium text-lg"
             >
               Veja nossa vitrine
-            </a>
+            </Link>
           </div>
         </div>
       </div>

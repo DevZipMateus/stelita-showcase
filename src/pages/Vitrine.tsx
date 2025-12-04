@@ -28,7 +28,7 @@ const Vitrine = () => {
       <Header />
       <div className="w-full flex-1 overflow-hidden" style={{ marginTop: '80px' }}>
         <iframe
-          src="https://fransandalias.egestor.com.br/vitrine/"
+          src="https://stelita.egestor.com.br/vitrine/"
           style={{
             width: "100%",
             height: `${iframeHeight}px`,
